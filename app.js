@@ -46,4 +46,6 @@ cipherBtn.addEventListener('click', function()	{
 	showOutput(cipher(cipherText), decipher(decipherText))
 	cipherInput.value = ""
 	decipherInput.value = ""
+	cipherText = ""
+	decipherText = ""
 })
