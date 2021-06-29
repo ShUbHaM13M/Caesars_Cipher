@@ -1,0 +1,80 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	display: grid;
+	place-items: center;
+	height: 100vh;
+	background: url('/bg.jpg');
+	background-size: cover;
+}
+
+h2 {
+	font-weight: normal;
+	margin-bottom: 1em;
+	border-bottom: 1px solid white;
+}
+
+hr {
+	border-color: white
+}
+
+input {
+	border: none;
+	padding: 0.8em 1.5em;
+	border-radius: 10px;
+	font-size: 1rem;
+	outline: none;
+	background-color: rgba(255, 255, 255, 0.8);
+	transition: opacity ease-in-out 150ms;
+}
+
+button {
+	background: white;
+	border: none;
+	border-radius: 10px;
+	padding: 0.8em 1.5em;
+	font-size: 1rem;
+	transition: opacity ease-in-out 150ms;
+}
+
+input:hover,
+button:hover,
+input:focus,
+button:focus {
+	opacity: 0.6;
+}
+
+input:disabled:hover,
+button:disabled:hover {
+	cursor: not-allowed;
+	opacity: 1;
+}
+
+.container {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+	background: rgba(255, 255, 255, 0.2);
+	padding: 2em;
+	border-radius: 1em;
+	width: 339px;
+	color: white;
+	backdrop-filter: blur(8px);
+	border: solid 2px rgba(255, 255, 255, 0.25);
+	background-clip: padding-box;
+}
+
+.field {
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+}
+
+.text-xl {
+	font-size: 1.25rem;
+}
